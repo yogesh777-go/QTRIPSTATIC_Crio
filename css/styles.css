@@ -77,7 +77,41 @@ footer {
 
   /* TODO: MODULE_LAYOUT */
   /* 1. Set a specific height. */
+  height: 16rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   /* 2. Position and center the image to scale nicely on all screens. */
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+#aaa {
+  margin-right: 0.5rem!important;
+  width: 70%;
+  padding: 5px;
+  border-radius: 10px;
+}
+#grids {
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * 0.9);
+    padding-left: calc(var(--bs-gutter-x) * 4);
+    margin-top: 2%;
+    
+  
+}
+#aaaa {
+  display: grid;
+  grid-template-rows: 5rem 5rem;
+  grid-template-columns: 10rem 10rem 10rem 10rem;
+  grid-gap: 7rem;
+  margin-left: 5rem;
+
+}
+#qqq {
+  justify-content: center;
+
 }
 
 .hero-subheading {
