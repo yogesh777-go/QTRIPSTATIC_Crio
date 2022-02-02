@@ -51,14 +51,29 @@ footer {
 .tile {
   /* TODO: MODULE_CARDS */
   /* 1. Fill in the required properties. */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: 8px;
+  overflow: hidden;
+  
 }
 .tile img {
   /* TODO: MODULE_CARDS */
   /* 1. Fill in the required properties. */
+  height: 100%;
+  width: 100%;
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+  
 }
 .tile img:hover {
   /* TODO: MODULE_CARDS */
   /* 1. Fill in the required properties. */
+  filter: brightness(50%);
+  cursor: zoom-out;
 }
 
 /* Hint: Notice the position:absolute and z-index properties. */
@@ -68,6 +83,10 @@ footer {
   z-index: 1;
   text-transform: uppercase;
   letter-spacing: 2px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
 }
 
 .hero-image {
@@ -92,27 +111,35 @@ footer {
   padding: 5px;
   border-radius: 10px;
 }
-#grids {
-    width: 100%;
-    max-width: 100%;
-    padding-right: calc(var(--bs-gutter-x) * 0.9);
-    padding-left: calc(var(--bs-gutter-x) * 4);
-    margin-top: 2%;
-    
-  
-}
 #aaaa {
   display: grid;
   grid-template-rows: 5rem 5rem;
   grid-template-columns: 10rem 10rem 10rem 10rem;
   grid-gap: 7rem;
-  margin-left: 5rem;
-
-}
-#qqq {
+  
   justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.9);
+  padding-left: calc(var(--bs-gutter-x) * 4);
+  margin-top: 2%;
+  margin-left: 0.05rem;
+    
 
 }
+.img-thumbnail {
+  padding: .20rem;
+  max-width: 100%;
+  height: auto;
+}
+
+#mumbai {
+  height: 26.4rem;
+}
+#malaysia {
+  height: 29.6rem;
+}
+
 
 .hero-subheading {
   font-size: 24px;
@@ -175,5 +202,6 @@ footer {
   #reservation {
     width: 400px;
     position: fixed;
+    
   }
 }
